@@ -8,6 +8,7 @@ So there are not user accounts and follow function. You can challenge after you 
 Check out [LIVE Twitter clone DEMO](https://twitterclone-huynhly.herokuapp.com/) here!!
 
 Screenshot 
+![Screenshot 2022-03-11 at 3 24 40 AM](https://user-images.githubusercontent.com/51028127/157761251-dfbba6f2-03b5-4269-8771-825d05978e4b.png)
 
 
 ## Tech used
