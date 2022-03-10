@@ -1,0 +1,141 @@
+/*
+Comment
+**********/
+html, body{
+    height: 100%;
+}
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+/** 
+Header 
+**/
+.content .header {
+    display: flex;
+    flex-basis: 15%;
+    padding: 20px;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.content .header img{
+    width: 10%;
+    margin-right: 20px;
+    
+    
+}
+.content .header h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 10px;
+}
+
+/*
+Post
+**********/
+.post_form{
+    padding: 20px 40px;
+    border-bottom: 10px solid #ccc;
+}
+.post_form .logo{
+    flex-basis: 15%;
+}
+.post_form .logo img{
+    width: 60%;
+}
+.post_form input{
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.post_form textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+input#uploadfile {
+    width: 45%;
+    border: 0;
+    padding-top: 20px;
+}
+input#btn {
+    width: 20%;
+    padding: 9px;
+    background-color: #07A7F7;
+    color: white;
+    border-radius: 10px;
+}
+.banner{
+    display: inline;
+
+}
+a#cancel {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 7px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+.posts ul{
+    padding: 0;
+}
+.posts li {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.posts li .logo{
+    flex-basis: 10%;
+}
+.posts li .menu_icon{
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    right: 18px;
+}
+.posts li .logo img{
+    width: 60%;
+}
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+
+}
+.posts li .menu a{
+    text-decoration: none;
+}
+.posts li .name_body{
+    flex-basis: 85%;
+
+}
+.posts li .name_body .name{
+    font-weight: bold;
+}
+.posts li .name_body .create{
+    color: gray;
+}
+@media screen and (max_width: 500px){
+    .post li .name_body .name{
+        font-style: 40px;
+    }
+    input#btn{
+        width: 40%;
+    }
+}
+
+

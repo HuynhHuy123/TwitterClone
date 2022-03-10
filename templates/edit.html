@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+
+<section class="content">
+  <div class="header">
+    <img src="{%static 'img/techis-logo.png' %}" alt="">
+    <h3>Edit</h3>
+  </div>
+    <section class="post_form">
+        <form action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="name" value="{{posts.name}}">
+            <input name="body" placeholder="what's happening?" value="{{posts.body}}" required></input>
+           
+            
+             {% if posts.image.url %}
+             <img class="image" src="{{posts.image.url}}" style="width: 250px; height: 200px;" />
+              
+              
+             {% endif %}
+             <br>
+             <input type="file" name="image" id="uploadfile">
+            <div class="banner">
+                <a href="{% url 'index' %}" id="cancel" type="submit">Cancel</a>
+                <input id="btn" type="submit" value="Update" />
+            </div>
+        </form>
+    </section>
+</section>
+{% endblock %}
